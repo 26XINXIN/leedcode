@@ -17,3 +17,7 @@ class Solution:
             for p in sub_permute:
                 result.append(p + [nums[i]])
         return result
+    
+    def permutes(self, nums):
+        from itertools import permutations
+        return permutations(nums)
