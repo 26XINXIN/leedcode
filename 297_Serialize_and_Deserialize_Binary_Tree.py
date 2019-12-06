@@ -8,34 +8,6 @@
 from queue import Queue
 
 class Codec:
-
-    # def serialize(self, root):
-    #     """Encodes a tree to a single string.
-        
-    #     :type root: TreeNode
-    #     :rtype: str
-    #     """
-    #     if not root:
-    #         return []
-    #     serial = list()
-    #     q = Queue()
-    #     q.put(root)
-    #     while not q.empty():
-    #         next_q = Queue()
-    #         leaf = True
-    #         while not q.empty():
-    #             node = q.get()
-    #             serial.append(node.val if node else None)
-    #             if not node:
-    #                 next_q.put(None)
-    #                 next_q.put(None)
-    #             else:
-    #                 next_q.put(node.left)
-    #                 next_q.put(node.right)
-    #                 leaf = False
-    #         if leaf: break
-    #     return serial
-
     def serialize(self, root):
         """Encodes a tree to a single string.
         
